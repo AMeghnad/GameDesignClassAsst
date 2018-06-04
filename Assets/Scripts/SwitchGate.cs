@@ -12,9 +12,17 @@ public class SwitchGate : Gate
         Right
     }
 
-    void Awake()
+    void Start()
     {
-
+        int randomGateNum = Random.Range(1, 11);
+        if (randomGateNum > 5)
+        {
+            blockOne.SetActive(false);
+        }
+        else
+        {
+            blockTwo.SetActive(false);
+        }
     }
 
     void OnTriggerEnter2D (Collider2D col)
