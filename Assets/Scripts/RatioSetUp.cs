@@ -10,8 +10,8 @@ public class RatioSetUp : MonoBehaviour
     {
         if (width == 0 || height == 0)
         {
-            width = 800;
-            height = 1280;
+            width = 600;
+            height = 960;
         }
         Screen.SetResolution(width, height, false);
     }
